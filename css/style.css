@@ -1,0 +1,390 @@
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 21px;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #3e3e3e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header {
+    height: 310px;
+    background: #343233;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header__image {
+    height: 100%;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header__image img {
+    height: 100%;
+    width: 100%;
+}
+
+.header__about {
+    margin-right: 25px;
+}
+
+.about {
+    text-align: center;
+    max-width: 460px;
+}
+
+.about__name {
+    font-size: 46px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+
+.about__profession {
+    font-size: 24px;
+    line-height: 2.5;
+}
+
+.about__greeting {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.content {
+    display: flex;
+}
+
+/*-----------------ASIDE----------------------*/
+
+.aside {
+    width: 400px;
+    background: #F6F6F6;
+    padding: 25px 23px;
+    border-radius: 15px;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+
+
+.aside__contacts {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts__item {
+    margin-bottom: 10px;
+}
+
+.contacts__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contacts__item a {
+    color: #646464;
+}
+
+.contacts__item a:hover {
+    color: #222;
+}
+
+/*---------------SKILLS----------------*/
+
+.aside__skills {
+    margin-bottom: 25px;
+}
+
+.skill {
+    color: #222;
+    width: 200px;
+    list-style: disc;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.skill:last-child {
+    margin-bottom: none;
+}
+
+.skill::before,
+.skill::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    background: #333;
+    width: 150px;
+    display: inline-block;
+    height: 7px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.skill::before {
+    background: #E0E0E0;
+}
+
+.skills__english::after {
+    width: calc(150px * .75);
+}
+
+.skills__css-html::after {
+    width: calc((150px * .7));
+}
+
+.skills__javascript::after {
+    width: calc((150px * .7));
+}
+
+.skills__scss::after {
+    width: calc(150px * .65);
+}
+
+.skills__typescript::after {
+    width: calc(150px * .8);
+}
+
+.skills__react::after {
+    width: calc(150px * .7);
+}
+
+.skills__redux::after {
+    width: calc(150px * .8);
+}
+
+.skills__react-router::after {
+    width: calc(150px * .63);
+}
+
+.skills__react-query::after {
+    width: calc(150px * .6);
+}
+
+.skills__next-js::after {
+    width: calc(150px *.35);
+}
+
+/*-------------SOFTWARE--------------*/
+
+
+.software {
+    margin-bottom: 25px;
+}
+
+.software__figma::after {
+    width: calc(150px * .78);
+}
+
+.software__visual-studio::after {
+    width: calc(150px * .9);
+}
+
+/*-------------HOBBIES----------------*/
+
+
+
+.hobby__content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hobby__item {
+    text-align: center;
+}
+
+.hobby__img {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.hobby__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.hobby__name {
+    color: #333;
+}
+
+
+
+/*------------------MAIN-------------------*/
+
+.main-content {
+    background: #F6F6F6;
+    padding: 25px;
+    border-radius: 15px;
+    flex-grow: 1;
+}
+
+.main-content__education {}
+
+.education {}
+
+.education__item {
+    display: flex;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.education__place {
+    margin-right: 50px;
+    max-width: 300px;
+}
+
+.education__period {
+    color: #646464;
+    margin-bottom: 15px;
+}
+
+.education__university {
+    font-size: 16px;
+}
+
+.education__info {}
+
+.education__degree {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.education__speciality {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.education__description {}
+
+
+
+/*------------------------------------*/
+
+
+
+
+@media (max-width: 1024px) {
+
+    .header {
+        height: 210px;
+        padding: 5px 10px
+    }
+
+    .header__image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about__name {
+        font-size: 38px;
+    }
+
+    .about__profession {
+        font-size: 18px;
+    }
+
+    .about__greeting {
+        font-size: 14px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .aside {
+        flex-grow: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+
+    .aside-list {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .skill {
+        width: 350px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        display: block;
+        height: auto;
+        padding: 20px;
+    }
+
+    .header__image {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .header__about {
+        margin: 0;
+    }
+
+    .about {
+        margin: 0 auto;
+    }
+
+    .about__name {
+        line-height: 1;
+    }
+
+    .aside {
+        width: auto;
+    }
+
+    .skill {
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        text-align: center;
+        list-style: none;
+    }
+
+    .skill::after,
+    .skill::before {
+        top: 35px;
+        left: 0;
+
+    }
+
+    .main-content {
+        width: auto;
+    }
+
+    .education {
+        flex-grow: 0;
+    }
+
+    .education__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .education__place {
+        margin-bottom: 20px;
+    }
+
+}
