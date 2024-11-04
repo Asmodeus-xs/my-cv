@@ -154,6 +154,10 @@
     width: calc(150px * .65);
 }
 
+.skills__tailwind::after {
+    width: calc(150px * .7)
+}
+
 .skills__typescript::after {
     width: calc(150px * .8);
 }
@@ -233,9 +237,6 @@
     flex-grow: 1;
 }
 
-.main-content__education {}
-
-.education {}
 
 .education__item {
     display: flex;
@@ -257,7 +258,6 @@
     font-size: 16px;
 }
 
-.education__info {}
 
 .education__degree {
     font-size: 24px;
@@ -269,7 +269,76 @@
     font-size: 18px;
 }
 
-.education__description {}
+/*----------------------Pet-projects-------------------------*/
+
+
+
+
+
+.pet-projects__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    border-radius: .75rem;
+    overflow: hidden;
+    background: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.project-card__img {
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.project-card__img img {
+    height: 100%;
+    width: 100%;
+}
+
+.project-card__img:hover {
+    outline: 2px solid #222;
+}
+
+.project-card__text-content {
+    padding: .5rem .75rem;
+}
+
+.project-card__name {
+    text-align: center;
+    font-size: 18px;
+    margin: .5rem 0;
+}
+
+.project-card__url {
+    margin-bottom: .5rem;
+}
+
+.project-card__url a {
+    color: #353535;
+    text-decoration: underline;
+}
+
+.project-card__url a:hover {
+    color: #5259b9;
+    text-decoration: none;
+}
+
+.project-card__tools {
+    font-size: 16px;
+    margin-bottom: .5rem;
+}
+
+.project-card__description {
+    margin-bottom: .5rem;
+}
+
+
 
 
 
@@ -386,5 +455,10 @@
     .education__place {
         margin-bottom: 20px;
     }
+
+
+
+
+
 
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/xml+svg" href="./img/icons/cv.svg">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +12,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&display=swap"
         rel="stylesheet">
+
+
+    <meta property="og:url" content="https://asmodeus-xs.github.io/my-cv/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Curriculum vitae">
+    <meta property="og:description" content="My Curriculum vitae">
+    <meta property="og:site_name" content="Curriculum vitae" />
+    <meta property="og:image" content="https://asmodeus-xs.github.io/my-cv/img/icons/cv.svg">
+
+    <meta itemprop="name" content="Curriculum vitae" />
+    <meta itemprop="description" content="My Curriculum vitae" />
+    <meta itemProp="image" content="https://asmodeus-xs.github.io/my-cv/img/icons/cv.svg">
+
+    <!-- Тип окна -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="Curriculum vitae" />
+    <meta property="twitter:domain" content="asmodeus-xs.github.io">
+    <meta property="twitter:url" content="https://asmodeus-xs.github.io/my-cv/">
+    <meta name="twitter:title" content="Curriculum vitae">
+    <meta name="twitter:description" content="My Curriculum vitae" />
+    <meta property="twitter:image" content="https://asmodeus-xs.github.io/my-cv/img/icons/cv.svg" />
+
     <title>CV</title>
 </head>
 
@@ -18,7 +41,7 @@
 
     <div class="wrapper">
         <header class="header">
-            <div class="header__image"><img src="./img/photo_2024-10-28_19-44-36.jpg" alt="photo of a person"></div>
+            <div class="header__image"><img src="./img/Author.jpg" alt="photo of a person"></div>
             <div class="header__about about">
                 <p class="about__name">Olexander Kuzioniy</p>
                 <p class="about__profession">Frontend React Developer</p>
@@ -54,6 +77,7 @@
                         <li class="skills__css-html skill">CSS & HTML</li>
                         <li class="skills__javascript skill">Javascript & DOM</li>
                         <li class="skills__scss skill">Scss</li>
+                        <li class="skills__tailwind skill">Tailwind CSS</li>
                         <li class="skills__typescript skill">Typescript</li>
                         <li class="skills__react skill">React</li>
                         <li class="skills__redux skill">Redux</li>
@@ -122,7 +146,44 @@
                 </section>
                 <section class="main-content__pet-projects pet-projects">
                     <h2 class="pet-projects__title title">Pet Projects</h2>
-                    <p>Yet to be done</p>
+                    <div class="pet-projects__content">
+                        <!-- <div class="pet-projects__project project-card">
+                            <div class="project-card__img"><a href="https://asmodeus-xs.github.io/my-cv/"><img
+                                        src="./img/CV.jpg" alt="project image"></a></div>
+                            <div class="project-card__text-content">
+                                <h3 class="project-card__name">Curriculum vitae</h3>
+                                <p class="project-card__url"><a href="https://asmodeus-xs.github.io/my-cv/"
+                                        target="_blank">https://asmodeus-xs.github.io/my-cv/</a></p>
+                                <p class="project-card__tools">Tools: HTML & CSS + Grid</p>
+                                <p class="project-card__description">Curriculum vitae</p>
+                            </div>
+                        </div> -->
+                        <div class="pet-projects__project project-card">
+                            <div class="project-card__img"><a href="https://asmodeus-xs.github.io/food-order-app/"><img
+                                        src="./img/Food.jpg" alt="project image"></a></div>
+                            <div class="project-card__text-content">
+                                <h3 class="project-card__name">Food order application</h3>
+                                <p class="project-card__url"><a href="https://asmodeus-xs.github.io/food-order-app/"
+                                        target="_blank">https://asmodeus-xs.github.io/food-order-app/</a></p>
+                                <p class="project-card__tools">Tools: React + Vite + Typescript + Redux + Tailwind CSS
+                                </p>
+                                <p class="project-card__description">Simple one-page food order aplication</p>
+                            </div>
+                        </div>
+                        <div class="pet-projects__project project-card">
+                            <div class="project-card__img"><a
+                                    href="https://asmodeus-xs.github.io/typescript-router/"><img
+                                        src="./img/Mentoring.jpg" alt="project image"></a></div>
+                            <div class="project-card__text-content">
+                                <h3 class="project-card__name">Mentoring application</h3>
+                                <p class="project-card__url"><a href="https://asmodeus-xs.github.io/typescript-router/"
+                                        target="_blank">https://asmodeus-xs.github.io/typescript-router/</a></p>
+                                <p class="project-card__tools">Tools: React + Vite + Typescript + React Router</p>
+                                <p class="project-card__description">Multi-page mentoring applicaiton made with help of
+                                    React Router</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
