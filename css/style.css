@@ -76,6 +76,9 @@
     border-radius: 15px;
     margin-right: 25px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 
@@ -100,6 +103,27 @@
 
 .contacts__item a:hover {
     color: #222;
+}
+
+
+.contacts__socials {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts__socials img {
+    height: 100%;
+}
+
+.contacts__social-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #343233;
+    height: 35px;
+    padding: 7px 15px;
+    border-radius: 7px;
+    color: #E0E0E0;
 }
 
 /*---------------SKILLS----------------*/
@@ -246,7 +270,8 @@
 
 .education__place {
     margin-right: 50px;
-    max-width: 300px;
+    width: 300px;
+    flex-shrink: 0;
 }
 
 .education__period {
@@ -267,6 +292,16 @@
 .education__speciality {
     margin-bottom: 15px;
     font-size: 18px;
+    line-height: 1.2;
+}
+
+.education__speciality a {
+    color: #3e3e3e;
+    text-decoration: underline;
+}
+
+.education__speciality a:hover {
+    color: #000;
 }
 
 /*----------------------Pet-projects-------------------------*/
@@ -454,6 +489,7 @@
 
     .education__place {
         margin-bottom: 20px;
+        width: 200;
     }
 
 
